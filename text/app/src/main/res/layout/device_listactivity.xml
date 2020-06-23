@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".device_listActivity"-->
+<!--    tools:ignore="MissingDefaultResource">-->
+
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/title_new_devices"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#666"-->
+<!--            android:paddingLeft="5dp"-->
+<!--            android:text="已配对设备"-->
+<!--            android:textColor="#fff"-->
+<!--            android:visibility="visible"-->
+<!--            android:paddingStart="5dp"-->
+<!--            tools:ignore="HardcodedText,RtlSymmetry" />-->
+
+<!--        <ListView-->
+<!--            android:id="@+id/paired_devices"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="2"-->
+<!--            android:stackFromBottom="true">-->
+
+
+<!--        </ListView>-->
+<!--        <TextView-->
+<!--            android:id="@+id/title_new_devices2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#666"-->
+<!--            android:paddingLeft="5dp"-->
+<!--            android:text="未配对的设备"-->
+<!--            android:textColor="#fff"-->
+<!--            android:visibility="visible"-->
+<!--            android:paddingStart="5dp"-->
+<!--            tools:ignore="HardcodedText,RtlSymmetry" />-->
+<!--        <ListView android:id="@+id/new_devices"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:stackFromBottom="true"-->
+<!--            android:layout_weight="2"-->
+<!--            />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button_scan"-->
+<!--            style="@android:style/Widget.Button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="查找设备"-->
+<!--            tools:ignore="HardcodedText" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button_cancel"-->
+<!--            style="@android:style/Widget.Button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="OnCancel"-->
+<!--            android:text="取消"-->
+<!--            tools:ignore="OnClick" />-->
+
+<!--    </LinearLayout>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout >-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/title_new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:paddingLeft="5dp"
+        android:text="已配对设备"
+        android:textColor="#fff"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:stackFromBottom="true">
+
+
+    </ListView>
+    <TextView
+        android:id="@+id/title_new_devices2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:paddingLeft="5dp"
+        android:text="未配对的设备"
+        android:textColor="#fff"
+        android:visibility="visible"
+        android:paddingStart="5dp"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+    <ListView android:id="@+id/new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+        android:layout_weight="2"
+        />
+
+    <Button
+        android:id="@+id/button_scan"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查找设备" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OnCancel"
+        android:text="取消" />
+</LinearLayout>

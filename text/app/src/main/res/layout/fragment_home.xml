@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearlayout0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/cityname1"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="53dp"
+                android:hint="唐山"
+                android:textColor="@color/colorBlue"
+                android:textSize="34sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:text="扫描蓝牙设备"
+                    android:id="@+id/Blutooth"
+                    android:background="@drawable/anniu1"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.44"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/linearlayout1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="天气："
+                android:id="@+id/tianqi"
+                android:textColor="@color/colorWord"
+                android:layout_weight="0.5"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/weather"
+                android:layout_width="0dp"
+                android:layout_height="40dip"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorWord"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="温度:"
+                android:layout_weight="0.4"
+                android:textColor="@color/colorWord"
+                android:id="@+id/wendu"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/h_temp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="0.6"
+                android:textSize="20sp"/>
+
+
+
+
+            <TextView
+                android:id="@+id/l_temp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:id="@+id/dazhuhe">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:id="@+id/zhuhe">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearlayout2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="柜内温度："
+                        android:id="@+id/temp1"
+                        android:textColor="@color/colorWord"
+                        android:layout_weight="0.8"
+                        android:textSize="25sp"/>
+
+                    <TextView
+                        android:id="@+id/wenduing"
+                        android:text="23℃"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:layout_weight="0.8"
+                        android:textColor="@color/colorWord"
+                        android:textSize="25sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/wenshi">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:text="柜内湿度："
+                        android:id="@+id/temp2"
+                        android:textColor="@color/colorWord"
+                        android:layout_weight="0.7"
+                        android:textSize="25sp"/>
+
+                    <TextView
+                        android:id="@+id/shiduing"
+                        android:layout_width="0dp"
+                        android:text="46%"
+                        android:layout_height="40dip"
+                        android:layout_weight="0.8"
+                        android:textColor="@color/colorWord"
+                        android:textSize="25sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:orientation="vertical"
+                android:id="@+id/anniu">
+
+                <TextView
+                    android:layout_width="7dip"
+                    android:layout_height="12dp"/>
+
+                <Button
+                    android:layout_width="40dip"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shuaxin2"
+                    android:id="@+id/send"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="8sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日推荐"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/act">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"/>
+                <GridView
+                    android:id="@+id/xihao_cloth"
+                    android:layout_width="361dp"
+                    android:layout_height="380dip"
+                    android:layout_marginTop="45dp"
+                    android:columnWidth="80dip"
+                    android:gravity="center"
+                    android:listSelector="@android:color/holo_purple"
+                    android:numColumns="2"
+                    android:scaleX="1"
+                    android:scaleY="1"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dip">
+                </GridView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:hint="        点击图片选择衣服，长按图片查看原图。"
+                android:editable="false"
+                android:textSize="16sp"
+                android:id="@+id/tishizi"
+                android:layout_below="@+id/act"
+                tools:ignore="Deprecated,HardcodedText" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:text="扫描蓝牙设备"-->
+<!--            android:id="@+id/Blutooth"-->
+<!--            android:background="#000000"-->
+<!--            android:layout_height="50dp"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="发送"-->
+<!--            android:background="#00bbff"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:id="@+id/send"-->
+<!--            android:textSize="20sp"-->
+<!--            tools:ignore="MissingConstraints"/>-->
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

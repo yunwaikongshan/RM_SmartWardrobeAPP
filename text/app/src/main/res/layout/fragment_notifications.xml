@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    浏览-->
+
+    <TextView
+        android:id="@+id/text_notifications"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/layout1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.48"
+                android:layout_height="match_parent"
+                android:id="@+id/select"
+                android:text="您已选中:"
+                android:textColor="@color/colorWord"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/selectxuhao"
+                android:text=""
+                android:gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="0.78" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.48"
+                android:layout_height="40dip"
+                android:id="@+id/qyf"
+                android:text="取/放衣服"
+                android:textColor="@android:color/background_light"
+                android:background="#ffa344"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.38"
+                android:layout_height="40dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/layout2"
+            android:layout_below="@id/layout1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="喜爱程度："
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/colorWord"
+                android:layout_weight="0.23"/>
+
+            <RatingBar
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:isIndicator="true"
+                android:id="@+id/ratingbar"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.5"
+                android:layout_height="match_parent">
+
+            </RatingBar>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.15"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/layout2"
+            android:orientation="horizontal"
+            android:id="@+id/layout3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/chong_zhi"
+                android:text="点击此处重置喜好程度"
+                android:textColor="@android:color/background_light"
+                android:background="#ffa344"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@id/layout3">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"/>
+
+            <GridView
+
+                android:id="@+id/allclothes"
+                android:layout_width="361dp"
+                android:layout_height="380dip"
+                android:layout_marginTop="45dp"
+                android:columnWidth="80dip"
+                android:gravity="center"
+                android:listSelector="@android:color/holo_purple"
+                android:numColumns="2"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dip">
+
+            </GridView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

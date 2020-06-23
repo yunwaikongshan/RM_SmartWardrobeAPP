@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">text</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">新衣入柜</string>
+    <string name="title_notifications">浏览</string>
+    <string name="wei_pei_dui">未配对设备</string>
+
+</resources>
